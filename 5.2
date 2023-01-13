@@ -1,0 +1,10 @@
+$(CC) = gcc
+
+final: main.o
+  $(CC) main.o -o final
+
+stack.o: main.c
+  $(CC) -c main.c
+
+clean:
+  rm *.0 final
